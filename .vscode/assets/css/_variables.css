@@ -1,0 +1,178 @@
+/**
+ * Settings: Variables
+ */
+
+:root {
+  /* Theme */
+
+  /* Novicell color */
+  --color-primary: #c80046;
+  --color-secondary: #363636;
+
+  /* Novicell color */
+  --color-blackberry: #510035;
+  --color-red: #b3153e;
+  --color-berry: #a0113b;
+  --color-plum: #510035;
+  --color-spearmint: #75bc7f;
+  --color-longfarm-blue: #c0e3de;
+
+  /* Grayscale */
+  --color-gray-dark: #4b4b4b;
+  --color-gray: #acacac;
+  --color-gray-light: #d7d7d7;
+  --color-white: #fff;
+  --color-black: #000;
+
+  /* Text */
+  --color-text: #363636;
+
+  /* Social */
+  --color-facebook: #3b5998;
+  --color-twitter: #00aced;
+  --color-google-plus: #d34836;
+
+  /* States */
+  --color-success: #2ecc71;
+  --color-warning: #f1c40f;
+  --color-danger: #e74c3c;
+
+  /* Grid */
+  --flexbox-grid-section-margin: 50px;
+  --flexbox-grid-container-width: 1560px;
+  --flexbox-grid-container-spacing: 50px;
+  --flexbox-grid-container-spacing--mobile: 20px;
+  --flexbox-grid-half-gutter-width: 20px;
+  --flexbox-grid-half-gutter-compensation: -20px;
+  --text-width: 1240px;
+  --grid-section-spacing: 100px;
+  --grid-section-spacing--mobile: calc(var(--grid-section-spacing) / 2);
+
+  /* Typography
+  ********************/
+  --base-font-family: 'Open Sans', sans-serif;
+  --base-font-size: 14px;
+  --base-font-weight: 400;  
+  --header-font-family: 'Open Sans', sans-serif;
+
+  /* Input
+  ********************/
+  --input-color: var(--color-text);
+  --input-focus-border-color: var(--color-primary);
+  --input-placeholder-color: var(--color-gray-dusty);
+  --input-border-radius: 2px;
+
+  /* CSS Utils Overrides
+  ********************/
+
+  /* Spacing */
+  --css-utils-spacing-base: 10px;
+
+  /* Colors */
+  --css-utils-color-primary: var(--color-primary);
+  --css-utils-color-secondary: var(--color-secondary);
+  --css-utils-color-success: var(--color-success);
+  --css-utils-color-danger: var(--color-danger);
+  --css-utils-color-warning: var(--color-warning);
+  --css-utils-color-gray: var(--border-color);
+  --css-utils-color-gray-light: var(--color-grey-light);
+  --css-utils-color-gray-dark: var(--color-grey-dark);
+  --css-utils-color-body: var(--text-color);
+
+  /* Borders */
+  --css-utils-border-width: 1px;
+  --css-utils-border-color: var(--border-color);
+  --css-utils-border-radius-sm: 3px;
+  --css-utils-border-radius: 4px;
+  --css-utils-border-radius-lg: 5px;
+  --css-utils-border-radius-round: 100%;
+
+  /* Shadows */
+  --css-utils-box-shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.075);
+  --css-utils-box-shadow: 0 10px 45px rgba(0, 0, 0, 0.1);
+  --css-utils-box-shadow-lg: 0 16px 48px rgba(0, 0, 0, 0.175);
+
+  /* Flexbox grid */
+  --flexbox-grid-container-width: 1282px;
+  --flexbox-grid-container-spacing: 40px;
+
+  /* Easing functions
+    ********************/
+  --easeInQuad: cubic-bezier(0.55, 0.085, 0.68, 0.53);
+
+  /* http://easings.net/#easeInQuad */
+  --easeOutQuad: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  
+  /* http://easings.net/#easeOutQuad */
+  --easeInOutQuad: cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  
+  /* http://easings.net/#easeInOutQuad */
+  
+  --easeInSine: cubic-bezier(0.47, 0, 0.745, 0.715);
+  
+  /* http://easings.net/#easeInSine */
+  --easeOutSine: cubic-bezier(0.39, 0.575, 0.565, 1);
+  
+  /* http://easings.net/#easeOutSine */
+  --easeInOutSine: cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  
+  /* http://easings.net/#easeInOutSine */
+  
+  --easeInCubic: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  
+  /* http://easings.net/#easeInCubic */
+  --easeOutCubic: cubic-bezier(0.215, 0.61, 0.355, 1);
+  
+  /* http://easings.net/#easeOutCubic */
+  --easeInOutCubic: cubic-bezier(0.645, 0.045, 0.355, 1);
+  
+  /* http://easings.net/#easeInOutCubic */
+  
+  --easeInQuart: cubic-bezier(0.895, 0.03, 0.685, 0.22);
+  
+  /* http://easings.net/#easeInQuart */
+  --easeOutQuart: cubic-bezier(0.165, 0.84, 0.44, 1);
+  
+  /* http://easings.net/#easeOutQuart */
+  --easeInOutQuart: cubic-bezier(0.77, 0, 0.175, 1);
+  
+  /* http://easings.net/#easeInOutQuart */
+  
+  --easeInQuint: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+  
+  /* http://easings.net/#easeInQuint */
+  --easeOutQuint: cubic-bezier(0.23, 1, 0.32, 1);
+  
+  /* http://easings.net/#easeOutQuint */
+  --easeInOutQuint: cubic-bezier(0.86, 0, 0.07, 1);
+  
+  /* http://easings.net/#easeInOutQuint */
+  
+  --easeInExpo: cubic-bezier(0.95, 0.05, 0.795, 0.035);
+  
+  /* http://easings.net/#easeInExpo */
+  --easeOutExpo: cubic-bezier(0.19, 1, 0.22, 1);
+  
+  /* http://easings.net/#easeOutExpo */
+  --easeInOutExpo: cubic-bezier(1, 0, 0, 1);
+  
+  /* http://easings.net/#easeInOutExpo */
+  
+  --easeInCirc: cubic-bezier(0.6, 0.04, 0.98, 0.335);
+  
+  /* http://easings.net/#easeInCirc */
+  --easeOutCirc: cubic-bezier(0.075, 0.82, 0.165, 1);
+  
+  /* http://easings.net/#easeOutCirc */
+  --easeInOutCirc: cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  
+  /* http://easings.net/#easeInOutCirc */
+  
+  --easeInBack: cubic-bezier(0.6, -0.28, 0.735, 0.045);
+  
+  /* http://easings.net/#easeInBack */
+  --easeOutBack: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  
+  /* http://easings.net/#easeOutBack */
+  --easeInOutBack: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}

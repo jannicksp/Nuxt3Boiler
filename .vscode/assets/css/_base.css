@@ -1,0 +1,41 @@
+/**
+ * Base
+ */
+
+/* Box sizing */
+
+* {
+  box-sizing: border-box;
+
+  &::before,
+  &::after {
+    box-sizing: border-box;
+  }
+}
+
+/* Body */
+
+body {
+  position: relative;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  color: var(--color-text);
+  font-weight: var(--base-font-weight);
+  font-size: var(--base-font-size);
+  font-family: var(--base-font-family);
+  line-height: 1.715;
+  background-color: #f7f6f4;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+}
+
+.icon {
+  display: block;
+  width: 24px;
+  height: 24px;
+  user-select: none;
+  fill: currentColor;
+}

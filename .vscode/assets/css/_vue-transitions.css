@@ -1,0 +1,10 @@
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.3s var(--easeInQuad);
+}
+
+.fade-enter,
+.fade-leave-active {
+  opacity: 0;
+  transition: opacity 0.3s var(--easeInQuad);
+}
